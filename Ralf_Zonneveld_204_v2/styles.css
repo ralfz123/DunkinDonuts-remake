@@ -1,0 +1,817 @@
+/* Deze website is gemaakt vanuit Mobile First*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    background-color: white;
+    width: 100vw;
+}
+
+/* DESKTOP body*/
+@media only screen and (min-width: 600px) {
+    body {
+        background-color: white;
+        width: 100vw;
+    }
+}
+
+/*header*/
+
+header h1 {
+    color: white;
+    text-align: center;
+    width: 100vw;
+    max-width: 100vw;
+}
+
+.logo {
+    width: 40%;
+    height: 40%;
+}
+
+.logo2 {
+    width: 20%;
+    height: 20%;
+    margin-left: 40px;
+}
+
+
+/* DESKTOP header*/
+@media screen and (min-width: 600px) {
+    main h2 {
+        margin-top: 2em;
+        margin-left: 6.875em;
+        font-size: 2em;
+    }
+
+
+    header h1 {
+        margin-top: 0.2em;
+    }
+
+
+    .logo {
+        width: 10%;
+        height: 10%;
+    }
+
+    .logo2 {
+        width: 5%;
+        height: 10%;
+    }
+}
+
+/* Font hele website*/
+h1,
+h2,
+h3,
+p {
+    font-family: 'Open sans', sans-serif;
+}
+
+
+/* Navigatie*/
+nav {
+    font-family: 'Baloo Thambi', sans-serif;
+    text-align: center;
+    margin: 0em 5em;
+    top: 1.7em;
+    position: fixed;
+    transform: translateX(-199%);
+    transition-duration: .5s;
+    overflow-x: hidden;
+}
+
+.animator {
+    transform: translateX(106%);
+    /*       transform: translateX(106%);*/
+    transition-duration: .3s;
+
+}
+
+
+.active > div:first-child {
+    transform: rotate(-45deg);
+    transition-duration: .1s;
+    position: relative;
+    top: .2rem;
+}
+
+
+.active > div:nth-child(2) {
+    transform: rotate(45deg);
+    transition-duration: .1s;
+}
+
+.active > div:nth-child(3) {
+    display: none;
+}
+
+.Hamburgercontainer {
+    position: fixed;
+    top: 3rem;
+    left: 0rem;
+    width: 100%;
+    background: #ee4699;
+    padding: 0.7em;
+    right: 2rem;
+    overflow-x: hidden;
+    max-width: 100vw;
+
+}
+
+.hamburger_line {
+    background: white;
+    height: .3rem;
+    width: 1.8rem;
+    transition: .2s;
+    padding: 0.1rem;
+    margin: 0.1rem;
+
+}
+
+
+nav ul {
+    width: 15rem;
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    padding: 0px;
+    flex-direction: column;
+    margin-top: 0.9em;
+}
+
+nav ul li {
+    width: 15rem;
+    background: #ee4699;
+    display: flex;
+    list-style: none;
+    display: inline;
+    padding: 9px 10px;
+    width: 100vw;
+}
+
+nav ul li a {
+    display: flex;
+    text-decoration: none;
+    color: aliceblue;
+}
+
+
+
+
+
+/* DESKTOP navigatie*/
+@media screen and (min-width: 600px) {
+
+    nav {
+        margin: 10px 0px;
+        list-style-type: none;
+        display: flex;
+        justify-content: flex-start;
+        position: fixed;
+        width: 100vw;
+        transform: translateX(0%);
+        z-index: 2;
+
+    }
+
+
+    nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100vw;
+        height: 1vw;
+        padding-bottom: 8rem;
+
+    }
+
+
+    nav ul li {
+        height: 6vw;
+        text-align: center;
+        display: block;
+        padding: 0em;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        flex-direction: row;
+        width: 7.6em;
+        background: #ee4699;
+        list-style: none;
+        z-index: 2;
+    }
+
+    nav ul li a {
+        padding: 13px 0px;
+    }
+
+
+    .animator {
+        display: none;
+    }
+
+
+    .active {
+        display: none;
+    }
+
+
+
+    .hamburger_line {
+        display: none;
+    }
+
+
+    .Hamburgercontainer {
+        height: 9px;
+        position: fixed;
+        top: 3rem;
+        left: 0rem;
+        width: 100%;
+        background: #ee4699;
+        padding: 1.5rem;
+        right: 2rem;
+        display: none;
+        z-index: 2;
+    }
+}
+
+
+/*Interactie Navigatie*/
+
+nav ul li:hover {
+    background: #F5821F;
+    transition: 0.3s;
+}
+
+nav ul li a:focus {
+    background: #F5821F;
+    transition: 0.3s;
+    outline: none;
+}
+
+nav ul li:active {
+    background: #F5821F;
+}
+
+
+
+
+
+/*main*/
+main {
+    width: 100vw;
+    margin: auto;
+    text-align: center;
+}
+
+main h2 {
+    padding: 60px 40px 20px 20px;
+}
+
+
+strong {
+    font-weight: bold;
+}
+
+p.productpage {
+    color: grey;
+    line-height: 1.5;
+    font-size: 0.9rem;
+    margin: 0em 1.5em;
+    text-align: left;
+}
+
+.producten {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 0em 1em;
+    padding: 0rem;
+    width: 90%;
+}
+
+
+.producten li {
+    list-style: none;
+    text-align: center;
+    width: 30%;
+    height: 30%;
+    margin: 0.3rem;
+}
+
+
+.producten li img {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/* de detailpagina op mobile device  */
+
+.imgdetailpage {
+    width: 90vw;
+    text-align: center;
+}
+
+.lijntje {
+    background: grey;
+    width: 90vw;
+    transition: .2s;
+    padding: 0.05rem;
+    margin: 0.1rem;
+    margin-bottom: 1rem;
+}
+
+.allergenen {
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    /*    margin: 1em 1em;*/
+    padding: 0rem;
+    width: 90%;
+
+}
+
+.allergenen li {
+    list-style: none;
+    text-align: center;
+    width: 50%;
+    height: 50%;
+    margin: 0rem;
+
+}
+
+.allergenen li img {
+    width: 100%;
+}
+
+
+/*formulier - gebruik gemaakt van CSS Combinators*/
+article {
+    text-align: center;
+
+}
+
+article h3 {
+    max-width: 100vw;
+    width: 100vw;
+    font-size: 2rem;
+    margin-top: 2rem
+}
+
+form {
+    margin-bottom: 40px;
+}
+
+form input:first-child {
+    width: 90%;
+    padding: 16px 10px 16px 60px;
+    margin: 7px 0px;
+    border: none;
+    background: #f5f5f5;
+    border-radius: 5px;
+    background-image: url(images/imagesgoed/contact.png);
+    background-size: 10%;
+    background-repeat: no-repeat;
+    background-position: 10px 6px;
+    font-size: 1rem;
+}
+
+form input:nth-child(2) {
+    width: 90%;
+    padding: 16px 10px 16px 60px;
+    margin: 7px 0px;
+    border: none;
+    background: #f5f5f5;
+    border-radius: 5px;
+    background-image: url(images/imagesgoed/email.png);
+    background-size: 10%;
+    background-repeat: no-repeat;
+    background-position: 10px 10px;
+    font-size: 1rem;
+}
+
+form input:nth-child(3) {
+    width: 90%;
+    padding: 16px 10px 16px 60px;
+    margin: 7px 0px;
+    border: none;
+    background: #f5f5f5;
+    border-radius: 5px;
+    background-image: url(images/imagesgoed/phone.png);
+    background-size: 10%;
+    background-repeat: no-repeat;
+    background-position: 10px 6px;
+    font-size: 1rem;
+}
+
+form textarea {
+    width: 90%;
+    max-width: 90%;
+    padding: 16px 10px 16px 60px;
+    height: 100px;
+    margin: 7px 0px;
+    border: none;
+    background: #f5f5f5;
+    border-radius: 5px;
+    background-image: url(images/imagesgoed/pen.png);
+    background-size: 7%;
+    background-repeat: no-repeat;
+    background-position: 10px 6px;
+    overflow-x: hidden;
+    font-size: 1rem;
+}
+
+/*de knop Versturen*/
+input:nth-child(5) {
+    width: 90%;
+    padding: 10px 10px;
+    border: 2px solid grey;
+    border-radius: 0px;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    text-decoration: red;
+    font-size: 1rem;
+}
+
+
+form input::placeholder {
+    color: darkgrey;
+    font-size: 1rem;
+    padding-left: 0px;
+}
+
+form textarea::placeholder {
+    color: darkgrey;
+    font-size: 1rem;
+    padding-left: 0px;
+}
+
+
+form input:focus {
+    border: 3px solid #ee4699;
+    outline: none;
+    font-size: 1rem;
+}
+
+
+form textarea:focus {
+    outline: none;
+    border: 3px solid #ee4699;
+}
+
+
+
+
+/* de detailpagina op DESKTOP */
+@media screen and (min-width: 600px) {
+    .imgdetailpage {
+        width: 40%;
+        text-align: center;
+    }
+
+    .lijntje {
+        display: none;
+    }
+
+    .allergenen {
+        margin-top: 2rem;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        padding: 0rem 0rem 0rem 23rem;
+        width: 100vw;
+        text-align: center;
+    }
+
+    .allergenen li {
+        display: block;
+        list-style: none;
+        text-align: center;
+        width: 13%;
+        height: 50%;
+        margin: 0rem;
+    }
+
+    .allergenen li img {
+        width: 100%;
+    }
+
+
+    /*formulier - gebruik gemaakt van CSS Combinators*/
+
+    h3 {
+        max-width: 100vw;
+        width: 100vw;
+        font-size: 1.5rem;
+        margin-top: 5rem
+    }
+
+    form {
+        margin-bottom: 40px;
+    }
+
+    form input:first-child {
+        width: 50%;
+        padding: 16px 10px 16px 60px;
+        margin: 7px 0px;
+        border: none;
+        background: #f5f5f5;
+        border-radius: 5px;
+        background-image: url(images/imagesgoed/contact.png);
+        background-size: 5%;
+        background-repeat: no-repeat;
+        background-position: 10px 6px;
+        font-size: 1rem;
+    }
+
+    form input:nth-child(2) {
+        width: 50%;
+        padding: 16px 10px 16px 60px;
+        margin: 7px 0px;
+        border: none;
+        background: #f5f5f5;
+        border-radius: 5px;
+        background-image: url(images/imagesgoed/email.png);
+        background-size: 5%;
+        background-repeat: no-repeat;
+        background-position: 10px 10px;
+        font-size: 1rem;
+    }
+
+    form input:nth-child(3) {
+        width: 50%;
+        padding: 16px 10px 16px 60px;
+        margin: 7px 0px;
+        border: none;
+        background: #f5f5f5;
+        border-radius: 5px;
+        background-image: url(images/imagesgoed/phone.png);
+        background-size: 5%;
+        background-repeat: no-repeat;
+        background-position: 10px 6px;
+        font-size: 1rem;
+    }
+
+    form textarea {
+        width: 50%;
+        max-width: 50%;
+        padding: 16px 10px 16px 60px;
+        height: 100px;
+        margin: 7px 0px;
+        border: none;
+        background: #f5f5f5;
+        border-radius: 5px;
+        background-image: url(images/imagesgoed/pen.png);
+        background-size: 4%;
+        background-repeat: no-repeat;
+        background-position: 10px 6px;
+        overflow-x: hidden;
+        font-size: 1rem;
+    }
+
+    /*de knop VERZENDEN*/
+    input:nth-child(5) {
+        width: 50%;
+        padding: 10px 10px;
+        border: 2px solid grey;
+        border-radius: 0px;
+        font-size: 1.3rem;
+        text-transform: uppercase;
+        text-decoration: red;
+    }
+
+
+    form input::placeholder {
+        color: darkgrey;
+        font-size: 1rem;
+        padding-left: 0px;
+    }
+
+
+    form textarea::placeholder {
+        color: darkgrey;
+        font-size: 17px;
+        padding-left: 0px;
+    }
+
+
+    form input:focus {
+        border: 3px solid #ee4699;
+        outline: none;
+    }
+
+
+    form textarea:focus {
+        outline: none;
+        border: 3px solid #ee4699;
+    }
+
+
+
+
+
+
+
+
+}
+
+/* DESKTOP main*/
+@media screen and (min-width: 600px) {
+    main {
+        width: 100vw;
+        margin: auto;
+    }
+
+    main h2 {
+        padding: 50px 0px 50px 0px;
+        margin-left: 10px;
+    }
+
+    p.productpage {
+        color: grey;
+        line-height: 1.5;
+        font-size: 1.1rem;
+        width: 80%;
+        margin: auto;
+        margin-bottom: 50px;
+    }
+
+    .producten {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 3em;
+        width: 80%;
+        margin: auto;
+        margin-bottom: 14px;
+    }
+
+    .producten li {
+        list-style: none;
+        text-align: center;
+        flex-grow: 2;
+        width: 18%;
+        height: 18%;
+    }
+
+    .producten li img:hover {
+        transition: 0.3s;
+        transform: scale(1.2);
+    }
+
+
+    .producten li img:hover {
+        cursor: pointer;
+    }
+
+}
+
+
+
+
+
+
+
+/*footer*/
+
+.footer {
+    background-color: #F5821F;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1em;
+}
+
+.footer ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0em;
+    background-color: #F5821F;
+}
+
+.footer li {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: 'Open sans', sans-serif;
+    font-size: 0.9rem;
+}
+
+
+.footer li a {
+    list-style: none;
+    text-decoration: none;
+    padding: 0.3em 7em;
+    color: aliceblue;
+}
+
+.footertwee {
+    background-color: #ee4699;
+    padding: 3em;
+}
+
+.footertwee a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.footertwee ul {
+    list-style: none;
+    display: flex;
+}
+
+.footertwee ul li {
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+
+.footertwee ul li a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.footertwee ul li img {
+    width: 50%;
+}
+
+
+
+/* DESKTOP Footer*/
+@media screen and (min-width: 600px) {
+
+    footer.footer {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0em;
+        justify-content: center;
+        width: 100vw;
+    }
+
+    footer ul {
+        width: 100vw;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0em;
+        flex-direction: row;
+        padding: 0em;
+        justify-content: center;
+    }
+
+    .footer li {
+        display: flex;
+        justify-content: center;
+        font-family: 'Open sans', sans-serif;
+        font-size: 0.9rem;
+    }
+
+    .footer li a:focus {
+        border: 5px solid #ee4699;
+        outline: none;
+    }
+
+    .footer li a {
+        list-style: none;
+        text-decoration: none;
+        padding: 1em;
+        color: aliceblue;
+    }
+
+    .footertwee {
+        background-color: #ee4699;
+        padding: 3em;
+    }
+
+    .footertwee ul {
+        list-style: none;
+        display: flex;
+        max-width: 100%;
+    }
+
+    .footertwee ul li {
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+
+    .footertwee ul li a {
+        text-decoration: none;
+        color: aliceblue;
+    }
+
+    .footertwee ul li img {
+        width: 2%;
+    }
+
+}
