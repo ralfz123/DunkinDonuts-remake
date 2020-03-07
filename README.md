@@ -1,2 +1,4 @@
 # Website-v2-Ralf-Zonneveld-204
-Beste Janno, Ik heb veel dingen aangepast die jij wenste (achter op het feedbackformulier stond een lijstje), zoals   -Geen horizontale scroll -Focus state aangepast op kleur (NAV en Footer) -Formulier gemaakt -Cursor pointer bij de producten -Detailpagina werkend en uitgewerkt   Succes met nakijken en je zei "hoe meer je verandert, hoe hoger je cijfer wordt". 
+This is an assignment where I have to copy a site exactly. Pixel perfect is the principle that I must apply and I am very good at that. In addition, the site had to be Responsive (Mobile and Desktop).
+
+The site I copied is: https://www.dunkindonuts.nl/donuts/
