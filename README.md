@@ -8,6 +8,6 @@ This is an assignment where I have to copy a site exactly. Pixel perfect is the 
 
 The site I copied is: <a href="https://www.dunkindonuts.nl/donuts/" target="_blank">https://www.dunkindonuts.nl/donuts/</a> (November 2019)
 
-## 🖥 + 📱 Live version
-[Here](https://ralfz123.github.io/Website-v2-Ralf-Zonneveld-204/Ralf_Zonneveld_204_v2/index.html) you can admire the live version.
+## 🖥 + 📱 Live version 🔴
+[Here](https://ralfz123.github.io/DunkinDonuts-remake/index.html) you can admire the live version.
 
