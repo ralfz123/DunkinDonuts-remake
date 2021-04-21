@@ -11,3 +11,9 @@ The site I copied is: <a href="https://www.dunkindonuts.nl/donuts/" target="_bla
 ## 🖥 + 📱 Live version 🔴
 [Here](https://ralfz123.github.io/DunkinDonuts-remake/index.html) you can admire the live version.
 
+## Changes
+- No horizontal scroll
+- Focus state set on color (nav & footer)
+- Form made
+- Cursor pointer when hover over the products
+- Detailpage created
