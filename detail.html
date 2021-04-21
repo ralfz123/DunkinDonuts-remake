@@ -1,135 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Detail | Dunkin' Donuts</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Baloo+Thambi&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="./styles.css">
-    <title>Dunkin' Donuts</title>
-    <link href="https://fonts.googleapis.com/css?family=Baloo+Thambi&display=swap" rel="stylesheet">
-</head>
-
-<!-- Beste Janno,
-Ik heb veel dingen aangepast die jij wenste (achter op het feedbackformulier stond een lijstje), zoals 
-
--Geen horizontale scroll
--Focus state aangepast op kleur (NAV en Footer)
--Formulier gemaakt
--Cursor pointer bij de producten
--Detailpagina werkend en uitgewerkt
-
-
-Succes met nakijken en je zei "hoe meer je verandert, hoe hoger je cijfer wordt".
--->
-
-
-<body>
-    <!--header-->
+  <body>
     <header>
+      <h1>
+        <img class="logo" src="./images/logo3.png" alt="" /><img
+          class="logo2"
+          src="images/ubereats2.png"
+          alt=""
+        />
+      </h1>
 
-        <h1><img class="logo" src="./images/logo3.png" alt=""><img class="logo2" src="images/ubereats2.png" alt=""></h1>
+      <div class="Hamburgercontainer">
+        <div class="hamburger_line"></div>
+        <div class="hamburger_line"></div>
+        <div class="hamburger_line"></div>
+      </div>
 
-        <div class="Hamburgercontainer">
-            <div class="hamburger_line"></div>
-            <div class="hamburger_line"></div>
-            <div class="hamburger_line"></div>
-        </div>
-
-        <!-- Navigatie-->
-        <div class="vormgevingnav">
-            <nav>
-                <ul>
-                    <li><a href="">HOME</a></li>
-                    <li><a href="">COFFEE &amp; MORE</a></li>
-                    <li><a href="index.html">DONUTS &amp; MORE</a></li>
-                    <li><a href="">DUNKIN’ APP </a></li>
-                    <li><a href="">MERCHANDISE</a></li>
-                    <li><a href="">STORES</a></li>
-                    <li><a href="">POP-UP STORE</a></li>
-                    <li><a href="">ABOUT</a></li>
-                    <li><a href="">F.A.Q.</a></li>
-                    <li><a href="">JOBS</a></li>
-                    <li><a href="">BLOG</a></li>
-                    <li><a href="">CONTACT</a></li>
-
-                </ul>
-            </nav>
-        </div>
-
+      <div class="vormgevingnav">
+        <nav>
+          <ul>
+            <li><a href="">HOME</a></li>
+            <li><a href="">COFFEE &amp; MORE</a></li>
+            <li><a href="index.html">DONUTS &amp; MORE</a></li>
+            <li><a href="">DUNKIN’ APP </a></li>
+            <li><a href="">MERCHANDISE</a></li>
+            <li><a href="">STORES</a></li>
+            <li><a href="">POP-UP STORE</a></li>
+            <li><a href="">ABOUT</a></li>
+            <li><a href="">F.A.Q.</a></li>
+            <li><a href="">JOBS</a></li>
+            <li><a href="">BLOG</a></li>
+            <li><a href="">CONTACT</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
-    <!--main-->
     <main>
-        <img class="imgdetailpage" src="images/imagesgoed/bad-to-the-bone.jpg" alt="">
+      <img
+        class="imgdetailpage"
+        src="images/imagesgoed/bad-to-the-bone.jpg"
+        alt=""
+      />
 
-        <div class="lijn">
-            <div class="lijntje"></div>
-        </div>
+      <div class="lijn">
+        <div class="lijntje"></div>
+      </div>
 
-        <div>
-            <h1>Bad to the bone</h1>
-            <p>Een Halloween special, deze lekker griezel is gevuld met witte chocolade.</p>
+      <div>
+        <h1>Bad to the bone</h1>
+        <p>
+          Een Halloween special, deze lekker griezel is gevuld met witte
+          chocolade.
+        </p>
 
-            <ul class="allergenen">
-                <li><img src="images/imagesgoed/ei.png" alt=""></li>
-                <li><img src="images/imagesgoed/Gluten.png" alt=""></li>
-                <li><img src="images/imagesgoed/Melk.png" alt=""></li>
-                <li><img src="images/imagesgoed/Soya.png" alt=""></li>
-            </ul>
-        </div>
+        <ul class="allergenen">
+          <li><img src="images/imagesgoed/ei.png" alt="" /></li>
+          <li><img src="images/imagesgoed/Gluten.png" alt="" /></li>
+          <li><img src="images/imagesgoed/Melk.png" alt="" /></li>
+          <li><img src="images/imagesgoed/Soya.png" alt="" /></li>
+        </ul>
+      </div>
 
+      <h3>Stuur een bericht</h3>
+      <!-- de waarde van action is de pagina zelf, omdat er geen server is waar de pagina met de ingevulde gegevens naartoe verzonden kan worden. -->
+      <form action="detail.html" method="get">
+        <input type="text" name="naam" placeholder="Naam" />
+        <input type="text" name="naam" placeholder="E-mail" />
+        <input type="text" name="naam" placeholder="Telefoonnummer" />
+        <textarea placeholder="Bericht" name="woord"></textarea>
 
-        <!-- Contactformulier -->
-        <h3>Stuur een bericht</h3>
-        <!-- de waarde van action is de pagina zelf, omdat er geen server is waar de pagina met de ingevulde gegevens naartoe verzonden kan worden. -->
-        <form action="detail.html" method="get">
-
-            <input type="text" name="naam" placeholder="Naam">
-            <input type="text" name="naam" placeholder="E-mail">
-            <input type="text" name="naam" placeholder="Telefoonnummer">
-            <textarea placeholder="Bericht" name="woord"></textarea>
-
-            <input class=versturen type="submit" value="Verzenden" />
-
-        </form>
-
-
+        <input class="versturen" type="submit" value="Verzenden" />
+      </form>
     </main>
 
-    <!--footer-->
-
     <footer>
-        <div class="footer">
-            <ul>
-                <li><a href="">Coffee &amp; more</a></li>
-                <li><a href="">Food &amp; Bakery</a></li>
-                <li><a href=""> Dunkin’ App</a></li>
-                <li><a href="">Merchandise</a></li>
-                <li><a href="">Vestigingen</a></li>
-                <li><a href=""> Pop-up vestiging</a></li>
-                <li><a href=""> Over ons </a></li>
-                <li><a href=""> F.A.Q. </a></li>
-                <li><a href="">Jobs</a></li>
-                <li><a href="">Nieuws</a></li>
-                <li><a href="">Contact</a></li>
-                <li><a href="">Actievoorwaarden</a></li>
-            </ul>
-        </div>
+      <div class="footer">
+        <ul>
+          <li><a href="">Coffee &amp; more</a></li>
+          <li><a href="">Food &amp; Bakery</a></li>
+          <li><a href=""> Dunkin’ App</a></li>
+          <li><a href="">Merchandise</a></li>
+          <li><a href="">Vestigingen</a></li>
+          <li><a href=""> Pop-up vestiging</a></li>
+          <li><a href=""> Over ons </a></li>
+          <li><a href=""> F.A.Q. </a></li>
+          <li><a href="">Jobs</a></li>
+          <li><a href="">Nieuws</a></li>
+          <li><a href="">Contact</a></li>
+          <li><a href="">Actievoorwaarden</a></li>
+        </ul>
+      </div>
 
-        <div class="footertwee">
-            <ul>
-                <li>
-                    <p><a href="disclaimer.html">© Dunkin’ Donuts 2018 | Disclaimer</a></p>
-                </li>
-            </ul>
-        </div>
+      <div class="footertwee">
+        <ul>
+          <li>
+            <p>
+              <a href="disclaimer.html">© Dunkin’ Donuts 2018 | Disclaimer</a>
+            </p>
+          </li>
+        </ul>
+      </div>
 
-
-        <!--Bron: https://www.dunkindonuts.nl/donuts/-->
+      <!--Bron: https://www.dunkindonuts.nl/donuts/-->
     </footer>
 
-
     <script src="script.js"></script>
-</body>
-
+  </body>
 </html>
