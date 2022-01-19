@@ -3,32 +3,13 @@ const navContainer = document.querySelector('.vormgevingnav');
 const lines = (document.querySelectorAll('.hamburger_line'));
 
 
-//const img = document.querySelector('.bone');
-//const overlay = document.querySelector('.overlay');
-//const klik = document.querySelector('.overlayClick');
-
-
 
 hamburger.addEventListener('click', handleEvent);
-
-//img.addEventListener('click', overlayScherm);
-//
-
-
-
-
-
-//function overlayScherm() {
-//    overlay.classList.toggle('overlayClick');
-//}
 
 function handleEvent() {
     navContainer.classList.toggle('animator');
     hamburger.classList.toggle('active');
 }
-
-
-
 
 
 // When the user scrolls the page, execute myFunction
